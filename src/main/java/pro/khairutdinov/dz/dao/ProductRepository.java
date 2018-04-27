@@ -1,11 +1,14 @@
 package pro.khairutdinov.dz.dao;
 
+import pro.khairutdinov.dz.Proxy.Logger;
 import pro.khairutdinov.dz.model.Product;
 
 import javax.ejb.Stateless;
+import javax.interceptor.Interceptors;
 import java.util.List;
 
 @Stateless
+@Interceptors({Logger.class})
 public class ProductRepository extends Repository {
     public void remove(int productId) {
         if (productId > 0){
@@ -14,6 +17,7 @@ public class ProductRepository extends Repository {
         }
 
     }
+
 
     public void merge(Product product){
         if (product != null)

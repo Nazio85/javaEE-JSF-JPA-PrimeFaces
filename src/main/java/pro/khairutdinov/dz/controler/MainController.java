@@ -1,14 +1,18 @@
 package pro.khairutdinov.dz.controler;
 
+import pro.khairutdinov.dz.Proxy.Logger;
 import pro.khairutdinov.dz.dao.MenuRepository;
 import pro.khairutdinov.dz.model.Menu;
 import pro.khairutdinov.dz.model.Product;
 import pro.khairutdinov.dz.dao.ProductRepository;
 
 
+import javax.ejb.Stateless;
 import javax.faces.bean.ManagedBean;
 import javax.faces.bean.ViewScoped;
 import javax.inject.Inject;
+import javax.interceptor.Interceptor;
+import javax.interceptor.Interceptors;
 import java.lang.reflect.Array;
 import java.util.ArrayList;
 import java.util.Collection;

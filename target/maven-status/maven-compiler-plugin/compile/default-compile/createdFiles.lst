@@ -6,3 +6,4 @@ pro/khairutdinov/dz/dao/ProductRepository.class
 pro/khairutdinov/dz/model/Menu.class
 pro/khairutdinov/dz/dao/Repository.class
 pro/khairutdinov/dz/controler/MainController.class
+pro/khairutdinov/dz/Proxy/Logger.class
