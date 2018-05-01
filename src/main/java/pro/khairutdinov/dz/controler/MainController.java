@@ -1,30 +1,25 @@
 package pro.khairutdinov.dz.controler;
 
-import pro.khairutdinov.dz.Proxy.Logger;
+import pro.khairutdinov.dz.dao.CategoryRepository;
 import pro.khairutdinov.dz.dao.MenuRepository;
+import pro.khairutdinov.dz.dao.ProductRepository;
+import pro.khairutdinov.dz.model.Category;
 import pro.khairutdinov.dz.model.Menu;
 import pro.khairutdinov.dz.model.Product;
-import pro.khairutdinov.dz.dao.ProductRepository;
 
-
-import javax.ejb.Stateless;
 import javax.faces.bean.ManagedBean;
 import javax.faces.bean.ViewScoped;
 import javax.inject.Inject;
-import javax.interceptor.Interceptor;
-import javax.interceptor.Interceptors;
-import java.lang.reflect.Array;
-import java.util.ArrayList;
 import java.util.Collection;
-import java.util.List;
-import java.util.Random;
+import java.util.Optional;
 
 @ViewScoped
 @ManagedBean
 public class MainController {
-    private static int id = 10;
     @Inject
     private ProductRepository productRepository;
+    @Inject
+    private CategoryRepository categoryRepository;
     @Inject
     private MenuRepository menuRepository;
 
@@ -32,17 +27,22 @@ public class MainController {
         return productRepository.findAll();
     }
 
+    public Collection<Category> geCategory() {
+        return categoryRepository.findAll();
+    }
+
     public void deleteProduct(Product product) {
         productRepository.remove(product.getId());
     }
 
-    public void createProduct(String name, int cost){
-        Random random = new Random();
-        productRepository.merge(new Product( name, random.nextInt(1000)));
+    public void createCategory(String name) {
+        categoryRepository.create(Optional.of(new Category(name)));
     }
 
-    public Collection<Menu> loadTopMenu(){
+    public Collection<Menu> loadTopMenu() {
         return menuRepository.findAll();
     }
+
+
 }
 

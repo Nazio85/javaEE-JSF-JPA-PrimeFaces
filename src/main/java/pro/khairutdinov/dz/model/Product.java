@@ -1,9 +1,7 @@
 package pro.khairutdinov.dz.model;
 
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.Id;
+import javax.persistence.*;
 
 @Entity
 public class Product {
@@ -12,6 +10,9 @@ public class Product {
     private int id;
     private String name;
     private int cost;
+
+//    @ManyToOne
+//    private Category category;
 
     public Product() {
     }
@@ -44,4 +45,12 @@ public class Product {
     public void setId(int id) {
         this.id = id;
     }
+
+//    public Category getCategory() {
+//        return category;
+//    }
+//
+//    public void setCategory(Category category) {
+//        this.category = category;
+//    }
 }

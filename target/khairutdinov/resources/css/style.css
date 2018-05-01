@@ -102,3 +102,11 @@
     text-transform: uppercase;
     color: #c5c5c5;
 }
+
+.btn:focus{
+    box-shadow: none; !important;
+}
+
+.body .myModal tr, .body .myModal td{
+    border: none;
+}

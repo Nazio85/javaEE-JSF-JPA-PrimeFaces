@@ -15,7 +15,6 @@ public class ProductRepository extends Repository {
             Product product = findById(productId);
             entityManager.remove(product);
         }
-
     }
 
 

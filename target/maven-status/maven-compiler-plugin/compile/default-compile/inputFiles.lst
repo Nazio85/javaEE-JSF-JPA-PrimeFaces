@@ -1,9 +1,14 @@
-/Users/nazio/Documents/java-ee-khairutdinov/src/main/java/pro/khairutdinov/dz/filters/Filters.java
+/Users/nazio/Documents/java-ee-khairutdinov/src/main/java/pro/khairutdinov/dz/filters/AdminFilter.java
 /Users/nazio/Documents/java-ee-khairutdinov/src/main/java/pro/khairutdinov/dz/dao/ProductRepository.java
 /Users/nazio/Documents/java-ee-khairutdinov/src/main/java/pro/khairutdinov/dz/model/Product.java
 /Users/nazio/Documents/java-ee-khairutdinov/src/main/java/pro/khairutdinov/dz/controler/MainController.java
+/Users/nazio/Documents/java-ee-khairutdinov/src/main/java/pro/khairutdinov/dz/service/Api.java
+/Users/nazio/Documents/java-ee-khairutdinov/src/main/java/pro/khairutdinov/dz/dao/CategoryRepository.java
+/Users/nazio/Documents/java-ee-khairutdinov/src/main/java/pro/khairutdinov/dz/Proxy/Logger.java
+/Users/nazio/Documents/java-ee-khairutdinov/src/main/java/pro/khairutdinov/dz/controler/CategoryConverter.java
 /Users/nazio/Documents/java-ee-khairutdinov/src/main/java/pro/khairutdinov/dz/model/Menu.java
 /Users/nazio/Documents/java-ee-khairutdinov/src/main/java/pro/khairutdinov/dz/controler/CounterView.java
+/Users/nazio/Documents/java-ee-khairutdinov/src/main/java/pro/khairutdinov/dz/controler/CreateNewProduct.java
 /Users/nazio/Documents/java-ee-khairutdinov/src/main/java/pro/khairutdinov/dz/dao/Repository.java
 /Users/nazio/Documents/java-ee-khairutdinov/src/main/java/pro/khairutdinov/dz/dao/MenuRepository.java
-/Users/nazio/Documents/java-ee-khairutdinov/src/main/java/pro/khairutdinov/dz/Proxy/Logger.java
+/Users/nazio/Documents/java-ee-khairutdinov/src/main/java/pro/khairutdinov/dz/model/Category.java
