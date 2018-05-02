@@ -24,4 +24,15 @@
         </navigation-case>
     </navigation-rule>
 
+    <application>
+        <locale-config>
+            <default-locale>en</default-locale>
+            <supported-locale>ru</supported-locale>
+        </locale-config>
+        <resource-bundle>
+            <base-name>local.message</base-name>
+            <var>msg</var>
+        </resource-bundle>
+    </application>
+
 </faces-config>

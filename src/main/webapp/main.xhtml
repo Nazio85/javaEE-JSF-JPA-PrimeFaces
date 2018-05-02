@@ -12,9 +12,11 @@
             <h:graphicImage name="img/bg-top.jpg"/>
             <div class="slide-text">
 
-                <p class="before-text"><h:outputText value="Кто Я?"/></p>
+                <p class="before-text">#{msg.whoAmI}</p>
 
-                <h1 class="text"><h:outputText value="Я Хайрутдинов Александр"/> </h1>
+                <h1 class="text">
+                    <h:outputText value="я #{msg.myFullName}"/>
+                </h1>
 
                 <h:form>
                     <p:poll interval="1" listener="#{counterView.increment}" update="txt_count"/>
