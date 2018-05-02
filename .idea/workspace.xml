@@ -2,17 +2,73 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="50dd945b-9306-46e6-bf2b-af1c743f12cb" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/resourceBundles.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/local/message_.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/local/message_ru_RU.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pro/khairutdinov/controler/AdminPanelController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pro/khairutdinov/service/MessageService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pro/khairutdinov/validation/ValidatorName.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/local/message.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/local/message_en_US.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pro/khairutdinov/dz/Proxy/Logger.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pro/khairutdinov/dz/controler/CategoryConverter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pro/khairutdinov/dz/controler/CounterView.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pro/khairutdinov/dz/controler/CreateNewProduct.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pro/khairutdinov/dz/controler/MainController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pro/khairutdinov/dz/dao/CategoryRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pro/khairutdinov/dz/dao/MenuRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pro/khairutdinov/dz/dao/ProductRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pro/khairutdinov/dz/dao/Repository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pro/khairutdinov/dz/filters/AdminFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pro/khairutdinov/filters/AdminFilter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pro/khairutdinov/dz/model/Category.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pro/khairutdinov/dz/model/Menu.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pro/khairutdinov/dz/model/Product.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pro/khairutdinov/dz/service/Api.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/local/message_.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/local/message_ru_RU.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/local/message_ru_RU.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/faces-config.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/faces-config.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/main.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/main.xhtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/adminPanel.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/adminPanel.xhtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/catalogProducts.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/catalogProducts.xhtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/local/message_.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/local/message_ru_RU.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/local/message_ru_RU.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/pro/khairutdinov/dz/Proxy/Logger.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/pro/khairutdinov/dz/controler/CategoryConverter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/pro/khairutdinov/dz/controler/CounterView.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/pro/khairutdinov/dz/controler/CreateNewProduct.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/pro/khairutdinov/dz/controler/MainController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/pro/khairutdinov/dz/dao/CategoryRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/pro/khairutdinov/dz/dao/MenuRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/pro/khairutdinov/dz/dao/ProductRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/pro/khairutdinov/dz/dao/Repository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/pro/khairutdinov/dz/filters/AdminFilter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/pro/khairutdinov/dz/model/Category.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/pro/khairutdinov/dz/model/Menu.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/pro/khairutdinov/dz/model/Product.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/pro/khairutdinov/dz/service/Api.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/khairutdinov.war" beforeDir="false" afterPath="$PROJECT_DIR$/target/khairutdinov.war" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/khairutdinov/WEB-INF/classes/local/message_.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/khairutdinov/WEB-INF/classes/local/message_ru_RU.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/khairutdinov/WEB-INF/classes/local/message_ru_RU.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/khairutdinov/WEB-INF/classes/pro/khairutdinov/dz/Proxy/Logger.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/khairutdinov/WEB-INF/classes/pro/khairutdinov/dz/controler/CategoryConverter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/khairutdinov/WEB-INF/classes/pro/khairutdinov/dz/controler/CounterView.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/khairutdinov/WEB-INF/classes/pro/khairutdinov/dz/controler/CreateNewProduct.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/khairutdinov/WEB-INF/classes/pro/khairutdinov/dz/controler/MainController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/khairutdinov/WEB-INF/classes/pro/khairutdinov/dz/dao/CategoryRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/khairutdinov/WEB-INF/classes/pro/khairutdinov/dz/dao/MenuRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/khairutdinov/WEB-INF/classes/pro/khairutdinov/dz/dao/ProductRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/khairutdinov/WEB-INF/classes/pro/khairutdinov/dz/dao/Repository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/khairutdinov/WEB-INF/classes/pro/khairutdinov/dz/filters/AdminFilter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/khairutdinov/WEB-INF/classes/pro/khairutdinov/dz/model/Category.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/khairutdinov/WEB-INF/classes/pro/khairutdinov/dz/model/Menu.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/khairutdinov/WEB-INF/classes/pro/khairutdinov/dz/model/Product.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/khairutdinov/WEB-INF/classes/pro/khairutdinov/dz/service/Api.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/khairutdinov/WEB-INF/faces-config.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/khairutdinov/WEB-INF/faces-config.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/khairutdinov/main.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/target/khairutdinov/main.xhtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/khairutdinov/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/khairutdinov/WEB-INF/web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/khairutdinov/adminPanel.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/target/khairutdinov/adminPanel.xhtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/khairutdinov/catalogProducts.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/target/khairutdinov/catalogProducts.xhtml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-archiver/pom.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -68,41 +124,80 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="main.xhtml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/main.xhtml">
+      <file leaf-file-name="AdminPanelController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/pro/khairutdinov/controler/AdminPanelController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
-              <caret line="20" column="24" lean-forward="true" selection-start-line="20" selection-start-column="24" selection-end-line="20" selection-end-column="24" />
+            <state relative-caret-position="284">
+              <caret line="23" column="36" selection-start-line="23" selection-start-column="36" selection-end-line="23" selection-end-column="36" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="head.xhtml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/part/head.xhtml">
+      <file leaf-file-name="adminPanel.xhtml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/adminPanel.xhtml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="11" column="9" lean-forward="true" selection-start-line="11" selection-start-column="9" selection-end-line="11" selection-end-column="9" />
+            <state relative-caret-position="199">
+              <caret line="20" column="63" selection-start-line="20" selection-start-column="63" selection-end-line="20" selection-end-column="63" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="message_ru_RU.properties" pinned="false" current-in-tab="true">
+      <file leaf-file-name="ValidatorName.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/pro/khairutdinov/validation/ValidatorName.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="206">
+              <caret line="21" column="98" selection-start-line="21" selection-start-column="98" selection-end-line="21" selection-end-column="98" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MessageService.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/pro/khairutdinov/service/MessageService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="105">
+              <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="message_ru_RU.properties" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/resources/local/message_ru_RU.properties">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="15">
-              <caret line="1" column="15" lean-forward="true" selection-start-line="1" selection-start-column="15" selection-end-line="1" selection-end-column="15" />
+            <state relative-caret-position="45">
+              <caret line="3" column="15" selection-start-line="3" selection-end-line="3" selection-end-column="15" />
+            </state>
+          </provider>
+          <provider editor-type-id="ResourceBundle" />
+        </entry>
+      </file>
+      <file leaf-file-name="catalogProducts.xhtml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/catalogProducts.xhtml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret column="2" selection-start-column="2" selection-end-column="2" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="faces-config.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/faces-config.xml">
+      <file leaf-file-name="MainController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/pro/khairutdinov/controler/MainController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="314">
-              <caret line="26" column="17" selection-start-line="26" selection-start-column="17" selection-end-line="26" selection-end-column="17" />
+            <state relative-caret-position="-4">
+              <caret line="18" column="11" selection-start-line="18" selection-start-column="11" selection-end-line="18" selection-end-column="11" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
-          <provider editor-type-id="com.intellij.jsf.yfilesGraph.editor.FacesNavigationFileEditorProvider" />
         </entry>
       </file>
     </leaf>
@@ -112,8 +207,8 @@
       <list>
         <option value="CSS File" />
         <option value="jsf" />
-        <option value="Class" />
         <option value="XML Properties File" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -145,8 +240,6 @@
         <option value="$PROJECT_DIR$/src/main/java/pro/khairutdinov/dz/controler/CounterView.java" />
         <option value="$PROJECT_DIR$/src/main/java/pro/khairutdinov/dz/Proxy/Logger.java" />
         <option value="$PROJECT_DIR$/src/main/java/pro/khairutdinov/dz/filters/Filters.java" />
-        <option value="$PROJECT_DIR$/src/main/java/pro/khairutdinov/dz/filters/AdminFilter.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/adminPanel.xhtml" />
         <option value="$PROJECT_DIR$/src/main/webapp/order.xhtml" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" />
         <option value="$PROJECT_DIR$/src/main/java/pro/khairutdinov/dz/model/Catalog.java" />
@@ -158,7 +251,6 @@
         <option value="$PROJECT_DIR$/src/main/java/pro/khairutdinov/dz/model/Product.java" />
         <option value="$PROJECT_DIR$/src/main/java/pro/khairutdinov/dz/controler/CreateNewProduct.java" />
         <option value="$PROJECT_DIR$/src/main/java/pro/khairutdinov/dz/controler/MainController.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/catalogProducts.xhtml" />
         <option value="$PROJECT_DIR$/src/main/java/pro/khairutdinov/dz/service/WebService.java" />
         <option value="$PROJECT_DIR$/src/main/java/pro/khairutdinov/dz/service/MyWebService.java" />
         <option value="$PROJECT_DIR$/src/main/java/pro/khairutdinov/dz/dao/ProductRepository.java" />
@@ -168,10 +260,18 @@
         <option value="$PROJECT_DIR$/src/main/java/pro/khairutdinov/dz/message/message.properties" />
         <option value="$PROJECT_DIR$/src/main/java/pro/khairutdinov/dz/message/message_ru_RU_ru_RU.properties" />
         <option value="$PROJECT_DIR$/src/main/java/pro/khairutdinov/dz/message/message_ru_RU.properties" />
-        <option value="$PROJECT_DIR$/src/main/resources/local/message_ru_RU.properties" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/faces-config.xml" />
         <option value="$PROJECT_DIR$/src/main/webapp/part/head.xhtml" />
         <option value="$PROJECT_DIR$/src/main/webapp/main.xhtml" />
+        <option value="$PROJECT_DIR$/src/main/java/pro/khairutdinov/dz/filters/AdminFilter.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/local/message_.properties" />
+        <option value="$PROJECT_DIR$/src/main/java/pro/khairutdinov/dz/service/MessageService.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/faces-config.xml" />
+        <option value="$PROJECT_DIR$/src/main/webapp/catalogProducts.xhtml" />
+        <option value="$PROJECT_DIR$/src/main/java/pro/khairutdinov/dz/controler/AdminPanelController.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/local/message_ru_RU.properties" />
+        <option value="$PROJECT_DIR$/src/main/java/pro/khairutdinov/dz/validation/ValidatorName.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/adminPanel.xhtml" />
+        <option value="$PROJECT_DIR$/src/main/java/pro/khairutdinov/validation/ValidatorName.java" />
       </list>
     </option>
   </component>
@@ -190,7 +290,23 @@
   </component>
   <component name="MavenProjectNavigator">
     <treeState>
-      <expand />
+      <expand>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="Maven Webapp" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+        </path>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="Maven Webapp" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="Plugins" type="7aea1407:MavenProjectsStructure$PluginsNode" />
+        </path>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="Maven Webapp" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="Plugins" type="7aea1407:MavenProjectsStructure$PluginsNode" />
+          <item name="wildfly" type="36feed69:MavenProjectsStructure$PluginNode" />
+        </path>
+      </expand>
       <select />
     </treeState>
   </component>
@@ -284,16 +400,6 @@
               <item name="java-ee-khairutdinov" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="pro" type="462c0819:PsiDirectoryNode" />
-              <item name="khairutdinov" type="462c0819:PsiDirectoryNode" />
-              <item name="dz" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="khairutdinov" type="b2602c69:ProjectViewProjectNode" />
-              <item name="java-ee-khairutdinov" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -303,6 +409,15 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
               <item name="local" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="khairutdinov" type="b2602c69:ProjectViewProjectNode" />
+              <item name="java-ee-khairutdinov" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="local" type="462c0819:PsiDirectoryNode" />
+              <item name="Resource Bundle 'message'" type="a6c14932:ResourceBundleNode" />
             </path>
             <path>
               <item name="khairutdinov" type="b2602c69:ProjectViewProjectNode" />
@@ -468,15 +583,16 @@
       <workItem from="1524917992304" duration="106000" />
       <workItem from="1525157262184" duration="19103000" />
       <workItem from="1525182523446" duration="3145000" />
-      <workItem from="1525185900765" duration="4604000" />
+      <workItem from="1525185900765" duration="11283000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="50688000" />
+    <option name="totallyTimeSpent" value="57367000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1152" height="720" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.5009009" side_tool="true" weight="0.32868218" />
@@ -496,11 +612,11 @@
       <window_info id="Image Layers" order="2" />
       <window_info anchor="bottom" id="Java Enterprise" order="7" weight="0.32868218" />
       <window_info anchor="right" id="Capture Analysis" order="3" />
-      <window_info anchor="bottom" auto_hide="true" id="Run" internal_type="SLIDING" order="2" type="SLIDING" weight="0.38914728" />
+      <window_info active="true" anchor="bottom" auto_hide="true" id="Run" internal_type="SLIDING" order="2" type="SLIDING" visible="true" weight="0.38914728" />
       <window_info anchor="bottom" id="Version Control" order="7" weight="0.32868218" />
-      <window_info anchor="bottom" id="Terminal" order="7" sideWeight="0.4990991" weight="0.32868218" />
+      <window_info anchor="bottom" id="Terminal" order="7" sideWeight="0.4990991" visible="true" weight="0.32868218" />
       <window_info id="Persistence" order="3" side_tool="true" />
-      <window_info active="true" auto_hide="true" content_ui="combo" id="Project" internal_type="SLIDING" order="0" type="SLIDING" visible="true" weight="0.24954955" />
+      <window_info auto_hide="true" content_ui="combo" id="Project" internal_type="SLIDING" order="0" type="SLIDING" weight="0.24954955" />
       <window_info anchor="right" id="Bean Validation" order="3" />
       <window_info id="Web" order="2" side_tool="true" />
       <window_info anchor="right" id="Theme Preview" order="3" />
@@ -522,54 +638,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/pro/khairutdinov/dz/controler/MainController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="30" column="42" selection-start-line="30" selection-start-column="31" selection-end-line="30" selection-end-column="42" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/pro/khairutdinov/dz/dao/ProductRepository.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="10" column="29" selection-start-line="10" selection-start-column="29" selection-end-line="10" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/pro/khairutdinov/dz/Proxy/Logger.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="13" column="58" selection-start-line="13" selection-start-column="58" selection-end-line="13" selection-end-column="58" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/css/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="16" selection-start-line="5" selection-start-column="16" selection-end-line="5" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/main.xhtml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="16" column="40" selection-start-line="16" selection-start-column="40" selection-end-line="16" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/pro/khairutdinov/dz/controler/CounterView.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="6" column="12" lean-forward="true" selection-start-line="6" selection-start-column="12" selection-end-line="6" selection-end-column="12" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/catalogProducts.xhtml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="135">
@@ -584,21 +652,21 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/pro/khairutdinov/dz/controler/MainController.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/pro/khairutdinov/controler/MainController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="195">
           <caret line="30" column="42" selection-start-line="30" selection-start-column="31" selection-end-line="30" selection-end-column="42" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/pro/khairutdinov/dz/dao/ProductRepository.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/pro/khairutdinov/dao/ProductRepository.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
           <caret line="10" column="29" selection-start-line="10" selection-start-column="29" selection-end-line="10" selection-end-column="29" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/pro/khairutdinov/dz/Proxy/Logger.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/pro/khairutdinov/Proxy/Logger.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
           <caret line="13" column="58" selection-start-line="13" selection-start-column="58" selection-end-line="13" selection-end-column="58" />
@@ -606,7 +674,7 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/index.xhtml" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/pro/khairutdinov/dz/model/Menu.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/pro/khairutdinov/model/Menu.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="270">
           <caret line="18" column="23" selection-start-line="18" selection-start-column="23" selection-end-line="18" selection-end-column="23" />
@@ -620,27 +688,13 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/pro/khairutdinov/dz/controler/CounterView.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/pro/khairutdinov/controler/CounterView.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
           <caret line="6" column="12" selection-start-line="6" selection-start-column="12" selection-end-line="6" selection-end-column="12" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/pro/khairutdinov/dz/filters/AdminFilter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="7" column="24" selection-start-line="7" selection-start-column="24" selection-end-line="7" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/adminPanel.xhtml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" column="26" selection-start-line="12" selection-start-column="26" selection-end-line="12" selection-end-column="26" />
         </state>
       </provider>
     </entry>
@@ -651,7 +705,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/pro/khairutdinov/dz/Proxy/Logger.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/pro/khairutdinov/Proxy/Logger.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="195">
           <caret line="13" column="58" selection-start-line="13" selection-start-column="58" selection-end-line="13" selection-end-column="58" />
@@ -665,7 +719,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/pro/khairutdinov/dz/dao/MenuRepository.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/pro/khairutdinov/dao/MenuRepository.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
           <caret line="8" column="10" selection-start-line="8" selection-start-column="10" selection-end-line="8" selection-end-column="10" />
@@ -707,7 +761,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/pro/khairutdinov/dz/controler/CategoryConverter.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/pro/khairutdinov/controler/CategoryConverter.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="345">
           <caret line="23" column="31" selection-start-line="23" selection-start-column="31" selection-end-line="23" selection-end-column="31" />
@@ -724,7 +778,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/pro/khairutdinov/dz/dao/CategoryRepository.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/pro/khairutdinov/dao/CategoryRepository.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
           <caret line="19" column="15" selection-start-line="19" selection-start-column="15" selection-end-line="19" selection-end-column="15" />
@@ -743,7 +797,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/pro/khairutdinov/dz/controler/CategoryConverter.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/pro/khairutdinov/controler/CategoryConverter.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="43">
           <caret line="12" column="27" lean-forward="true" selection-start-line="12" selection-start-column="27" selection-end-line="12" selection-end-column="27" />
@@ -754,7 +808,7 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/pro/khairutdinov/dz/client.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/pro/khairutdinov/dz/service/Api.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/pro/khairutdinov/service/Api.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
           <caret line="8" column="28" selection-start-line="8" selection-start-column="28" selection-end-line="8" selection-end-column="28" />
@@ -765,45 +819,28 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/catalogProducts.xhtml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="358">
-          <caret line="48" column="18" lean-forward="true" selection-start-line="48" selection-start-column="18" selection-end-line="48" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/pro/khairutdinov/dz/controler/MainController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="410">
-          <caret line="39" column="5" selection-start-line="39" selection-start-column="5" selection-end-line="39" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/pro/khairutdinov/dz/model/Product.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/pro/khairutdinov/model/Product.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="235">
           <caret line="18" selection-start-line="18" selection-end-line="18" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/pro/khairutdinov/dz/model/Category.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/pro/khairutdinov/model/Category.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="478">
           <caret line="46" column="7" selection-start-line="46" selection-start-column="7" selection-end-line="46" selection-end-column="7" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/pro/khairutdinov/dz/dao/ProductRepository.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/pro/khairutdinov/dao/ProductRepository.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="360">
           <caret line="29" column="11" lean-forward="true" selection-start-line="29" selection-start-column="11" selection-end-line="29" selection-end-column="11" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/pro/khairutdinov/dz/controler/CreateNewProduct.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/pro/khairutdinov/controler/CreateNewProduct.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="215">
           <caret line="17" column="12" selection-start-line="17" selection-start-column="12" selection-end-line="17" selection-end-column="12" />
@@ -834,32 +871,6 @@
       </provider>
       <provider editor-type-id="ResourceBundle" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/local/message_.properties">
-      <provider selected="true" editor-type-id="text-editor" />
-      <provider editor-type-id="ResourceBundle" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/faces-config.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="314">
-          <caret line="26" column="17" selection-start-line="26" selection-start-column="17" selection-end-line="26" selection-end-column="17" />
-        </state>
-      </provider>
-      <provider editor-type-id="com.intellij.jsf.yfilesGraph.editor.FacesNavigationFileEditorProvider" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/part/head.xhtml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="9" lean-forward="true" selection-start-line="11" selection-start-column="9" selection-end-line="11" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/main.xhtml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="20" column="24" lean-forward="true" selection-start-line="20" selection-start-column="24" selection-end-line="20" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/local/message_ru_RU.1properties">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="15">
@@ -868,10 +879,117 @@
       </provider>
       <provider editor-type-id="ResourceBundle" />
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/pro/khairutdinov/filters/AdminFilter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="13" column="82" selection-start-line="13" selection-start-column="82" selection-end-line="13" selection-end-column="82" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/local/message_.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="44" lean-forward="true" selection-start-column="44" selection-end-column="44" />
+        </state>
+      </provider>
+      <provider editor-type-id="ResourceBundle" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/local/message_en_US.properties">
+      <provider selected="true" editor-type-id="text-editor" />
+      <provider editor-type-id="ResourceBundle" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/local/message.properties">
+      <provider selected="true" editor-type-id="text-editor" />
+      <provider editor-type-id="ResourceBundle" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/faces-config.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="26" column="17" selection-start-line="26" selection-start-column="17" selection-end-line="26" selection-end-column="17" />
+        </state>
+      </provider>
+      <provider editor-type-id="com.intellij.jsf.yfilesGraph.editor.FacesNavigationFileEditorProvider" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/part/head.xhtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" column="9" selection-start-line="11" selection-start-column="9" selection-end-line="11" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/main.xhtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="20" column="24" selection-start-line="20" selection-start-column="24" selection-end-line="20" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/pro/khairutdinov/controler/AdminPanelController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="284">
+          <caret line="23" column="36" selection-start-line="23" selection-start-column="36" selection-end-line="23" selection-end-column="36" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/pro/khairutdinov/controler/MainController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-4">
+          <caret line="18" column="11" selection-start-line="18" selection-start-column="11" selection-end-line="18" selection-end-column="11" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/catalogProducts.xhtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="2" selection-start-column="2" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/adminPanel.xhtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="199">
+          <caret line="20" column="63" selection-start-line="20" selection-start-column="63" selection-end-line="20" selection-end-column="63" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/javax/javaee-api/7.0/javaee-api-7.0.jar!/javax/faces/validator/FacesValidator.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="16" column="18" selection-start-line="16" selection-start-column="18" selection-end-line="16" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/local/message_ru_RU.properties">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" column="15" lean-forward="true" selection-start-line="1" selection-start-column="15" selection-end-line="1" selection-end-column="15" />
+        <state relative-caret-position="45">
+          <caret line="3" column="15" selection-start-line="3" selection-end-line="3" selection-end-column="15" />
+        </state>
+      </provider>
+      <provider editor-type-id="ResourceBundle" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/pro/khairutdinov/service/MessageService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/pro/khairutdinov/validation/ValidatorName.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="206">
+          <caret line="21" column="98" selection-start-line="21" selection-start-column="98" selection-end-line="21" selection-end-column="98" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

@@ -14,7 +14,7 @@
 
     <filter>
         <filter-name>AdminFilter</filter-name>
-        <filter-class>pro.khairutdinov.dz.filters.AdminFilter</filter-class>
+        <filter-class>pro.khairutdinov.filters.AdminFilter</filter-class>
     </filter>
 
     <filter-mapping>
