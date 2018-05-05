@@ -13,8 +13,6 @@ import java.util.ResourceBundle;
 
 @FacesValidator("validatorName")
 public class ValidatorName implements Validator {
-    @Inject
-    private MessageService messageService;
     @Override
     public void validate(FacesContext facesContext, UIComponent uiComponent, Object o) throws ValidatorException {
         if (o.toString().length() < 4){

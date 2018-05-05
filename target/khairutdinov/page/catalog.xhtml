@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Created by IntelliJ IDEA.
+  User: nazio
+  Date: 03.05.2018
+  Time: 13:05
+-->
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:ui="http://java.sun.com/jsf/facelets" xmlns:f="http://xmlns.jcp.org/jsf/core">
+
+
+<h:body>
+    <ui:composition template="/template/simplePage.xhtml">
+        <ui:define name="content">
+            <h4 class="text-center text-uppercase text-white p-1"><h:outputText value="Каталог:"/></h4>
+
+            <h:form class="mt-5 pt-2">
+                <!--<f:ajax event="click" execute="btnOk" render="form"/>-->
+
+
+                <h4 class=" text-center text-uppercase"><h:outputText value="#{msg.products}"/></h4>
+                <h:dataTable id="table" var="product" value="#{productController.products}" class="table table-hover">
+                    <f:event type="preRenderView" listener="#{productController.loadAllProducts}"/>
+                    <h:column rowHeader="true">
+                        <f:facet name="header">
+                            <h:outputText value="id"/>
+                        </f:facet>
+                        <h:outputText value="#{product.id}"/>
+                    </h:column>
+                    <h:column>
+                        <f:facet name="header">
+                            <h:outputText value="name"/>
+                        </f:facet>
+                        <h:outputText value="#{product.name}"/>
+                    </h:column>
+                    <h:column>
+                        <f:facet name="header">
+                            <h:outputText value="cost"/>
+                        </f:facet>
+                        <h:outputText value="#{product.cost}"/>
+                    </h:column>
+                    <h:column>
+                        <f:facet name="header">
+                            <h:outputText value="category"/>
+                        </f:facet>
+                        <h:outputText value="#{product.category.name}"/>
+                    </h:column>
+                    <h:column>
+                        <h:commandButton value="Delete" class="btn btn-primary">
+                            <f:ajax event="click" listener="#{productController.deleteProductAndUpdate(product)}"
+                                    render="@form"/>
+                        </h:commandButton>
+                    </h:column>
+                </h:dataTable>
+
+
+                <!-- Button trigger modal -->
+                <button id="btnModal" type="button" class="btn btn-primary btn-block" data-toggle="modal"
+                        data-target="#exampleModalLong">
+                    #{msg.create}
+                </button>
+
+
+                <!-- Modal -->
+                <div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog"
+                     aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLongTitle">Создать товар</h5>
+                                <button type="button" class="close" data-dismiss="modal" id="btnClose"
+                                        aria-label="Close">
+                                    <span aria-hidden="true"></span>
+                                </button>
+                            </div>
+                            <script>
+                            </script>
+                            <div class="modal-body">
+                                <div class="row">
+                                    <div class="col-8">
+                                        <h:inputText id="inputName" class="form-control"
+                                                     value="#{productController.productName}">
+                                            <f:ajax event="keyup"/>
+                                        </h:inputText>
+                                    </div>
+                                    <div class="col-4">
+                                        <h:selectOneMenu value="#{categoryController.categorySelect}"
+                                                         class="form-control maxHeight">
+                                            <f:ajax event="change"/>
+                                            <f:selectItems value="#{categoryController.categoryMap}"/>
+                                        </h:selectOneMenu>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                <div data-dismiss="modal">
+                                    <h:commandButton class="btn btn-primary" value="Ok" data-dismiss="modal">
+                                        <f:ajax listener="#{productController.createProduct}" render="table"/>
+                                    </h:commandButton>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </h:form>
+        </ui:define>
+    </ui:composition>
+</h:body>
+
+</html>

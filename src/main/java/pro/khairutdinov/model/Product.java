@@ -1,6 +1,7 @@
 package pro.khairutdinov.model;
 
 
+import javax.inject.Inject;
 import javax.persistence.*;
 
 @Entity
@@ -11,15 +12,16 @@ public class Product {
     private String name;
     private int cost;
 
-//    @ManyToOne
-//    private Category category;
+    @ManyToOne
+    private Category category;
 
     public Product() {
     }
 
-    public Product(String name, int cost) {
+    public Product(String name, int cost, Category category) {
         this.name = name;
         this.cost = cost;
+        this.category = category;
     }
 
     public String getName() {
@@ -46,11 +48,11 @@ public class Product {
         this.id = id;
     }
 
-//    public Category getCategory() {
-//        return category;
-//    }
-//
-//    public void setCategory(Category category) {
-//        this.category = category;
-//    }
+    public Category getCategory() {
+        return category;
+    }
+
+    public void setCategory(Category category) {
+        this.category = category;
+    }
 }

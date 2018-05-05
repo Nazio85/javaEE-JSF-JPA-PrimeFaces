@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:f="http://xmlns.jcp.org/jsf/core" xmlns:c="http://java.sun.com/jsp/jstl/core">
+<ui:include src="/part/head.xhtml"/>
+<h:body class="body">
+    <div class="top-block">
+        <div class="image-top">
+            <h:graphicImage name="img/bg-top.jpg"/>
+            <div class="slide-text">
+
+                <p class="before-text">#{msg.whoAmI}</p>
+
+                <h1 class="text">
+                    <h:outputText value="#{msg.myFullName}"/>
+                </h1>
+
+                <h:form>
+                </h:form>
+            </div>
+        </div>
+        <ui:include src="/part/menu.xhtml"/>
+
+        <main>
+            <h:form>
+                <div class="container">
+                    <div class="row">
+                        <nav class="nav flex-column col-4 leftMenu">
+                            <h6 class="menuTitle"><h:outputText value="#{msg.categories}"/> </h6>
+                            <c:forEach items="#{mainController.categories}" var="menuItem">
+                                <h:commandLink actionListener="#{mainController.loadProduct}" value="#{menuItem.name}"
+                                               class="nav-link"/>
+                            </c:forEach>
+                        </nav>
+
+                        <div class="col-8">
+                            <h2>Главная страница</h2>
+                        </div>
+                    </div>
+                </div>
+
+            </h:form>
+        </main>
+
+
+    </div>
+</h:body>
+</html>

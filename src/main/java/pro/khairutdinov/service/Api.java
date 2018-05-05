@@ -21,7 +21,7 @@ public class Api {
 
     @WebMethod
     public void createProduct(@WebParam String name, @WebParam int cost){
-        productRepository.merge(new Product(name, cost));
+//        productRepository.merge(new Product(name, cost));
     }
 
     @WebMethod

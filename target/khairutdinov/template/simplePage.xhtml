@@ -5,8 +5,12 @@
       xmlns:h="http://xmlns.jcp.org/jsf/html"
       xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
       xmlns:f="http://xmlns.jcp.org/jsf/core">
-<ui:include src="part/head.xhtml"/>
+<ui:include src="/part/head.xhtml"/>
 <h:body>
-    <ui:include src="part/menu.xhtml"/>
+    <ui:include src="/part/menu.xhtml"/>
+
+    <ui:insert name="content">
+
+    </ui:insert>
 </h:body>
 </html>

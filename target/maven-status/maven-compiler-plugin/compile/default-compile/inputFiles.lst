@@ -6,12 +6,14 @@
 /Users/nazio/Documents/java-ee-khairutdinov/src/main/java/pro/khairutdinov/model/Product.java
 /Users/nazio/Documents/java-ee-khairutdinov/src/main/java/pro/khairutdinov/dao/Repository.java
 /Users/nazio/Documents/java-ee-khairutdinov/src/main/java/pro/khairutdinov/service/Api.java
-/Users/nazio/Documents/java-ee-khairutdinov/src/main/java/pro/khairutdinov/controler/AdminPanelController.java
+/Users/nazio/Documents/java-ee-khairutdinov/src/main/java/pro/khairutdinov/controler/CategoryController.java
 /Users/nazio/Documents/java-ee-khairutdinov/src/main/java/pro/khairutdinov/controler/CounterView.java
 /Users/nazio/Documents/java-ee-khairutdinov/src/main/java/pro/khairutdinov/Proxy/Logger.java
+/Users/nazio/Documents/java-ee-khairutdinov/src/main/java/pro/khairutdinov/model/User.java
+/Users/nazio/Documents/java-ee-khairutdinov/src/main/java/pro/khairutdinov/controler/ProductController.java
 /Users/nazio/Documents/java-ee-khairutdinov/src/main/java/pro/khairutdinov/model/Category.java
-/Users/nazio/Documents/java-ee-khairutdinov/src/main/java/pro/khairutdinov/controler/CategoryConverter.java
 /Users/nazio/Documents/java-ee-khairutdinov/src/main/java/pro/khairutdinov/dao/MenuRepository.java
 /Users/nazio/Documents/java-ee-khairutdinov/src/main/java/pro/khairutdinov/model/Menu.java
 /Users/nazio/Documents/java-ee-khairutdinov/src/main/java/pro/khairutdinov/dao/ProductRepository.java
 /Users/nazio/Documents/java-ee-khairutdinov/src/main/java/pro/khairutdinov/service/MessageService.java
+/Users/nazio/Documents/java-ee-khairutdinov/src/main/java/pro/khairutdinov/controler/TestController.java

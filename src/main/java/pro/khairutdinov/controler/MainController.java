@@ -7,14 +7,19 @@ import pro.khairutdinov.model.Category;
 import pro.khairutdinov.model.Menu;
 import pro.khairutdinov.model.Product;
 
+import javax.annotation.PostConstruct;
+import javax.faces.bean.ApplicationScoped;
 import javax.faces.bean.ManagedBean;
 import javax.faces.bean.ViewScoped;
+import javax.faces.event.ActionEvent;
 import javax.inject.Inject;
+import java.util.ArrayList;
 import java.util.Collection;
+import java.util.List;
 import java.util.Optional;
 
-@ViewScoped
-@ManagedBean
+@ManagedBean(eager = true)//загрузить сразу
+@ApplicationScoped
 public class MainController {
     @Inject
     private ProductRepository productRepository;
@@ -23,26 +28,27 @@ public class MainController {
     @Inject
     private MenuRepository menuRepository;
 
-    public Collection<Product> getProducts() {
-        return productRepository.findAll();
-    }
+    private List<Category> categories;
 
-    public Collection<Category> geCategory() {
-        return categoryRepository.findAll();
-    }
-
-    public void deleteProduct(Product product) {
-        productRepository.remove(product.getId());
-    }
-
-    public void createCategory(String name) {
-        categoryRepository.create(Optional.of(new Category(name)));
+    @PostConstruct
+    private void init(){
+        categories = categoryRepository.findAll();
     }
 
     public Collection<Menu> loadTopMenu() {
         return menuRepository.findAll();
     }
 
+    public void loadProduct(){
+    }
+
+    public List<Category> getCategories() {
+        return categories;
+    }
+
+    public void setCategories(List<Category> categories) {
+        this.categories = categories;
+    }
 
 }
 

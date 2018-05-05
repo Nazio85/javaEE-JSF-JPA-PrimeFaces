@@ -16,7 +16,7 @@
     <schema id="5" parent="1" name="khairutdinov">
       <Current>1</Current>
       <Visible>1</Visible>
-      <Collation>latin1_swedish_ci</Collation>
+      <Collation>utf8_general_ci</Collation>
     </schema>
     <schema id="6" parent="1" name="mysql">
       <Collation>latin1_swedish_ci</Collation>
@@ -929,16 +929,18 @@
     </table>
     <table id="235" parent="5" name="Menu">
       <Engine>InnoDB</Engine>
+      <Collation>latin1_swedish_ci</Collation>
     </table>
     <table id="236" parent="5" name="Product">
       <Engine>InnoDB</Engine>
     </table>
     <table id="237" parent="5" name="hibernate_sequence">
       <Engine>InnoDB</Engine>
+      <Collation>latin1_swedish_ci</Collation>
     </table>
     <column id="238" parent="234" name="id">
       <Position>1</Position>
-      <DataType>bigint(20)|0s</DataType>
+      <DataType>int(11)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
@@ -994,7 +996,7 @@
     </column>
     <column id="248" parent="236" name="category_id">
       <Position>4</Position>
-      <DataType>bigint(20)|0s</DataType>
+      <DataType>int(11)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
     <index id="249" parent="236" name="FKexqqeaksnmmku5py194ywp140">

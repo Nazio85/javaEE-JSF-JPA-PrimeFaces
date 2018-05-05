@@ -17,7 +17,6 @@ public class ProductRepository extends Repository {
         }
     }
 
-
     public void merge(Product product){
         if (product != null)
             entityManager.merge(product);
@@ -26,6 +25,12 @@ public class ProductRepository extends Repository {
     public List<Product> findAll(){
         return entityManager.createQuery("SELECT e FROM Product e", Product.class).getResultList();
     }
+
+    public List<Product> findByCategoryId(int id){
+        return entityManager.createQuery("SELECT e FROM Product e where category_id =" + id, Product.class).getResultList();
+    }
+
+
 
     public Product findById(int id){
         return entityManager.find(Product.class, id);

@@ -1,6 +1,7 @@
 package pro.khairutdinov.model;
 
 import javax.persistence.*;
+import java.util.List;
 
 @Entity
 public class Category {
@@ -10,16 +11,17 @@ public class Category {
 
     private String name;
 
+    @OneToMany(mappedBy = "category", cascade = CascadeType.ALL)
+    private List<Product> products;
+
+
     public Category() {
     }
-
 
     public Category(String name) {
         this.name = name;
     }
 
-//    @OneToMany(mappedBy = "category", cascade = CascadeType.ALL)
-//    private List<Product> products;
 
     public int getId() {
         return id;
@@ -37,11 +39,11 @@ public class Category {
         this.name = name;
     }
 
-//    public List<Product> getProducts() {
-//        return products;
-//    }
-//
-//    public void setProducts(List<Product> products) {
-//        this.products = products;
-//    }
+    public List<Product> getProducts() {
+        return products;
+    }
+
+    public void setProducts(List<Product> products) {
+        this.products = products;
+    }
 }

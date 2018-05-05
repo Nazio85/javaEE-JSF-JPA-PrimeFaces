@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:f="http://xmlns.jcp.org/jsf/core"
+      xmlns:c="http://java.sun.com/jsp/jstl/core">
+<ui:include src="/part/head.xhtml"/>
+<h:body>
+    <div class="header">
+        <ui:include src="/part/menu.xhtml"/>
+    </div>
+
+    <ui:composition template="/template/simplePage.xhtml">
+
+        <ui:define name="content">
+            <h:outputStylesheet library="css" name="loginForm.css"/>
+            <h:form class="form-signin">
+                <img class="mb-4" src="https://getbootstrap.com/assets/brand/bootstrap-solid.svg" alt="" width="72"
+                     height="72"/>
+                <h1 class="h3 mb-3 font-weight-normal">Please sign in</h1>
+                <label for="inputEmail" class="sr-only">Email address</label>
+                <h:inputText id="inputEmail" value="#{user.userName}" required="true"/>
+                <!--<label for="inputPassword" class="sr-only">Password</label>-->
+                <!--<input type="password" id="inputPassword" class="form-control" />-->
+                <h:commandButton action="admin" class="btn btn-lg btn-primary btn-block" value="Sign in"/>
+            </h:form>
+        </ui:define>
+
+        <ui:define name="login">
+            <h:outputText value="#{user.userName}"/>
+        </ui:define>
+
+    </ui:composition>
+
+
+</h:body>
+</html>

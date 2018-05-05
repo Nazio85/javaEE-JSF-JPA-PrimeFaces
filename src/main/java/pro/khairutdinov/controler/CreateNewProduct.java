@@ -19,10 +19,6 @@ public class CreateNewProduct {
     private Category selectCategory;
     private String productName;
 
-    public void createProduct(){
-        Random random = new Random();
-        productRepository.merge(new Product(productName, random.nextInt(1000)));
-    }
 
     public void clearDialog(){
         productName = "";
